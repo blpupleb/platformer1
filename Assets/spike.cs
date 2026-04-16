@@ -18,7 +18,7 @@ public class sprite : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       Debug.Log("Trigger Collider");
+       //Debug.Log("Trigger Collider");
        collision.GetComponent<HealthComponent>().AddDamage(damage);
        Destroy(collision.gameObject);
     }
