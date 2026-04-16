@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class healthpack : MonoBehaviour
+public class Healthpack : MonoBehaviour
 {
-    public float healingValue = 2;
+    public float HealingValue = 4;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +17,7 @@ public class healthpack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-        collision.GetComponent<HealthComponent>().AddHealth(healingValue);
+        collision.GetComponent<HealthComponent>().AddHealth(HealingValue);
         Destroy(gameObject);
     }
 }

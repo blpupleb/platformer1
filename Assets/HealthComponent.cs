@@ -6,51 +6,51 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     private float Health = 20;
-    public float maxHealth = 20;
+    public int maxHealth = 20;
+    private float currentHealth;
+    private float HealingValue = 4;
+    private bool invincibilty;
 
-    public int currentHealth { get; private set; }
-
-    public delegate void OnHealthChangedHandler(float newHelath, float annountChanged);
+    public delegate void OnHealthChangedHandler(float newHealth, float annountChanged);
     public event OnHealthChangedHandler OnHealthChanged;
+
+    public delegate void OnHealthInitializedHandler(float newHealth);
+    public event OnHealthInitializedHandler OnHealthInitialized;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
+        currentHealth = maxHealth;
+        OnHealthInitialized?.Invoke(currentHealth);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddDamage(float HealingValue)
     {
-
-    }
-    public void AddDamage(float damage)
-    {
-        Health -= damage;
-        //Debug.Log(Health);
-
-        if (Health <= 0)
+        if (!invincibilty)
         {
-            Destroy(this.gameObject);
+            currentHealth -= HealingValue;
+            OnHealthChanged?.Invoke(currentHealth, HealingValue);
+            invincibilty = true;
+            StartCoroutine(ResetInvincibilty(3));
         }
     }
 
-    public void reciveDamage(float healingValue)
+    IEnumerator ResetInvincibilty(float resetTime)
     {
-        currentHealth -= (int)healingValue;
+        yield return new WaitForSeconds(resetTime);
+        invincibilty = false;
     }
 
-    public void AddHealth(float healingValue)
+    public void AddHealth(float HealingValue)
     {
-        currentHealth += (int)healingValue;
-        OnHealthChanged?.Invoke(currentHealth, healingValue);
-        Health += healingValue;
+        currentHealth += HealingValue;
+        OnHealthChanged?.Invoke(currentHealth, HealingValue);
+        Health += HealingValue;
 
-            if(Health >= maxHealth)
+        if (Health >= maxHealth)
         {
             Health = maxHealth;
         }
-       // Debug.Log(Health);
-
-}
+    }
 }
