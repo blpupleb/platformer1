@@ -11,7 +11,7 @@ public class playermotor : MonoBehaviour
     Vector2 direction;
     Rigidbody2D rigidbody2d;
     public float speed = 10;
-    public float jumpForce = 10;
+    public float jumpForce = 3;
     private bool canJump = true;
     public float maxSpeed = 5;
     public float stoppingForce = 5;
