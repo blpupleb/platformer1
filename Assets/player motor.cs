@@ -77,4 +77,5 @@ public class playermotor : MonoBehaviour
     {
         canJump = true;
     }
+
 }
