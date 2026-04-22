@@ -1809,7 +1809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db0ae1a398faea4798f4c16c2c61f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinComp: {fileID: 1959784171}
+  coinComp: {fileID: 1756411229}
   coinText: {fileID: 1299154379}
 --- !u!114 &1299154379
 MonoBehaviour:
@@ -2207,6 +2207,7 @@ GameObject:
   - component: {fileID: 1756411226}
   - component: {fileID: 1756411227}
   - component: {fileID: 1756411228}
+  - component: {fileID: 1756411229}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -2416,6 +2417,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+--- !u!114 &1756411229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756411221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c97cdf0337c24489a34597000a98ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1896610156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2574,6 @@ GameObject:
   - component: {fileID: 1959784175}
   - component: {fileID: 1959784174}
   - component: {fileID: 1959784172}
-  - component: {fileID: 1959784171}
   - component: {fileID: 1959784176}
   m_Layer: 0
   m_Name: cojn
@@ -2570,18 +2582,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1959784171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959784170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c97cdf0337c24489a34597000a98ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1959784172
 MonoBehaviour:
   m_ObjectHideFlags: 0
