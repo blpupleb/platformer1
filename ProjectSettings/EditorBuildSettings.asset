@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ekran_startowy.unity
     guid: 176f5baf359a38142a19518520236a33
   - enabled: 1
-    path: Assets/Scenes/poziom1.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 60e65355ef886594282b5b3fe67c10ff
   - enabled: 1
     path: "Assets/Scenes/ekran_\u015Bmierci.unity"
