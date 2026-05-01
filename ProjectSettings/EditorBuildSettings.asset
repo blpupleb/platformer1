@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -13,10 +13,16 @@ EditorBuildSettings:
     guid: 176f5baf359a38142a19518520236a33
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
-    guid: 60e65355ef886594282b5b3fe67c10ff
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: "Assets/Scenes/ekran_\u015Bmierci.unity"
     guid: 09f759d1a9b0edb42a98c030d1ac02b9
+  - enabled: 1
+    path: Assets/Scenes/SampleScene 1.unity
+    guid: ad95d3f788579344b81ad174a2a687e6
+  - enabled: 1
+    path: Assets/Scenes/SampleScene 2.unity
+    guid: aa96a98f17cb6914bba96630ecabc513
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
