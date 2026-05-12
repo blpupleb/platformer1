@@ -37,7 +37,7 @@ public class HealthComponent : MonoBehaviour
         }
         if (currentHealth < 0)
         {
-            SceneManager.LoadScene("EndGame");
+            SceneManager.LoadScene("ekran_œmierci");
         }
     }
 
