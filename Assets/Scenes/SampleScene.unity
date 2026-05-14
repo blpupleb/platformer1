@@ -3311,6 +3311,7 @@ MonoBehaviour:
   jumpForce: 7
   maxSpeed: 5
   stoppingForce: 7
+  dashForce: 50
 --- !u!114 &1756411225
 MonoBehaviour:
   m_ObjectHideFlags: 0
