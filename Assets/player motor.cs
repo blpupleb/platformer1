@@ -44,6 +44,7 @@ public class playermotor : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        animator.SetFloat("SpeedY", rigidbody2d.linearVelocityY);
         if (direction.x > 0)
         {
             transform.localScale = new Vector3(initScale, transform.localScale.y, transform.localScale.x);
@@ -142,6 +143,7 @@ public class playermotor : MonoBehaviour
     {
         canJump = true;
         currentJumps = 0;
+
     }
 
 }
