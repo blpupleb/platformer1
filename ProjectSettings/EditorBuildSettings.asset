@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene 4.unity
     guid: 817c743f3b2ab0d4580f2496f18a381e
+  - enabled: 1
+    path: "Assets/Scenes/ekran_ko\u0144cowy.unity"
+    guid: 73f2d3883e0ffc448b7ed564ccc551fb
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c56a4e25b56b96c419ea8575013a577c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
